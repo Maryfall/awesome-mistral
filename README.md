@@ -71,23 +71,37 @@ Mistral AI offers a compelling alternative in the LLM landscape:
 
 | Model | Parameters | Context | Best For |
 |-------|------------|---------|----------|
-| **Mistral Large** | 123B | 128k | Complex reasoning, multilingual, code generation |
-| **Mistral Medium** | — | 32k | Balanced performance-to-cost ratio |
-| **Mistral Small** | 24B | 128k | Low-latency, cost-sensitive applications |
+| **Mistral Large 3** | 675B (41B active) | 128k | Complex reasoning, multilingual, code generation, vision |
+| **Magistral Medium** | — | — | Complex reasoning, chain-of-thought, problem solving |
+| **Mistral Small 3.2** | 24B | 128k | Low-latency, cost-sensitive applications |
 
 ### Open-Weight Models
 
-- 🧠 [Mistral 7B](https://huggingface.co/mistralai/Mistral-7B-v0.1) – Compact 7B model outperforming Llama 2 13B on most benchmarks.
-- 🧠 [Mistral 7B Instruct v0.3](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3) – Latest instruction-tuned variant with function calling.
+- 🧠 [Mistral Large 3](https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512) – Flagship multimodal model (675B total / 41B active).
+- 🧠 [Mistral Small 3.2](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506) – High-performance 24B model (v3.2).
+- 🧠 [Mistral 7B v0.3](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3) – Latest instruction-tuned variant with function calling.
 - 🧠 [Mixtral 8x7B](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1) – Sparse MoE with 46.7B total / 12.9B active parameters.
-- 🧠 [Mixtral 8x7B Instruct](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1) – Instruction-tuned MoE variant.
 - 🧠 [Mixtral 8x22B](https://huggingface.co/mistral-community/Mixtral-8x22B-v0.1) – Large-scale MoE with 141B total / 39B active parameters.
+
+### Reasoning Models
+
+- 🧠 [Magistral Small 24B](https://huggingface.co/mistralai/Magistral-Small-2506) – Open-weight reasoning model (24B) for complex logical tasks. 
+- 🧠 **Magistral Medium** – Specialized reasoning model available via API.
+
+### Edge & On-Device Models (Ministral)
+
+- 🧠 [Ministral 8B](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410) – High-performance edge model (8B parameters).
+- 🧠 [Ministral 3B](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512) – Ultralight model optimized for mobile and edge devices.
 
 ### Specialized Models
 
-- 🧠 **Codestral** – Code-specialized model for 80+ programming languages.
-- 🧠 **Devstral** – Developer-focused model for coding assistance and software development.
-- 🧠 **Pixtral** – Multimodal model with vision capabilities.
+- 🧠 **Pixtral Large** – Frontier-class multimodal model (124B) for image and text understanding.
+- 🧠 [Pixtral 12B](https://huggingface.co/mistralai/Pixtral-12B-2409) – Efficient multimodal model.
+- 🧠 **Codestral 25.01** – State-of-the-art coding model for software development.
+- 🧠 [Codestral Mamba](https://huggingface.co/mistralai/mamba-codestral-7B-v0.1) – Efficient linear-time sequence modeling for code.
+- 🧠 **Devstral** – Developer-focused model for coding assistance.
+- 🧠 **Voxtral** – Voice-native models for speech processing.
+- 🧠 **Mistral OCR** – High-performance document understanding and OCR.
 - 🧠 **Mathstral** – Mathematics-specialized for reasoning and problem-solving.
 
 ---
