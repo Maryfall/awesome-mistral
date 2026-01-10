@@ -43,11 +43,11 @@ Mistral AI offers a compelling alternative in the LLM landscape:
 
 | Aspect | Mistral Advantage |
 |--------|-------------------|
-| **Open Weights** | Models like Mistral 7B and Mixtral are fully open-weight, enabling local deployment, fine-tuning, and full control |
-| **Efficiency** | Mistral 7B outperforms Llama 2 13B; Mixtral 8x7B matches GPT-3.5 with only 12.9B active parameters |
+| **Open Weights** | Models like Mistral Large 3 and Ministral are fully open-weight (Apache 2.0), enabling local deployment and full control |
+| **Efficiency** | Mistral Large 3 (675B) uses active parameter routing (41B active) for high efficiency; Ministral models are optimized for edge |
 | **European Sovereignty** | Paris-based company offering GDPR-compliant, EU-hosted API options |
 | **Cost Efficiency** | Competitive API pricing; open models enable free self-hosting |
-| **Innovation** | Pioneered efficient MoE architectures and sliding window attention in open models |
+| **Innovation** | Pioneered efficient MoE architectures, local reasoning models, and multimodal edge AI |
 
 ---
 
@@ -61,48 +61,46 @@ Mistral AI offers a compelling alternative in the LLM landscape:
 - 🧠 [mistral-finetune](https://github.com/mistralai/mistral-finetune) ⭐ 3k+ – Official lightweight LoRA-based fine-tuning library.
 - 🧠 [Mistral Cookbook](https://github.com/mistralai/cookbook) ⭐ 2k+ – Official notebooks and examples for common use cases.
 - 🧠 [mistral-common](https://github.com/mistralai/mistral-common) – Official tokenization and pre-processing library.
+- 🧠 [Mistral Vibe](https://github.com/mistralai/vibe) – Native CLI coding assistant.
 - 🧠 [Platform Docs Public](https://github.com/mistralai/platform-docs-public) – Open-source documentation repository.
 
 ---
 
-## Models
+## Model Families
 
 ### Flagship Models (API)
 
-| Model | Parameters | Context | Best For |
-|-------|------------|---------|----------|
-| **Mistral Large 3** | 675B (41B active) | 128k | Complex reasoning, multilingual, code generation, vision |
-| **Magistral Medium** | — | — | Complex reasoning, chain-of-thought, problem solving |
-| **Mistral Small 3.2** | 24B | 128k | Low-latency, cost-sensitive applications |
+| Model | Context | License | Best For |
+|-------|---------|---------|----------|
+| **Mistral Large 3** | 256k | Apache 2.0 | Complex reasoning, multilingual, coding, vision (675B / 41B active) |
+| **Mistral Medium 3.1** | 128k | Proprietary | Prototype-to-production, balanced performance |
+| **Mistral Small 3.2** | 128k | Apache 2.0 | Low-latency, cost-sensitive applications (24B) |
+| **Mistral OCR 3** | — | Proprietary | Document parsing, table reconstruction ($2/1k pages) |
 
 ### Open-Weight Models
 
-- 🧠 [Mistral Large 3](https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512) – Flagship multimodal model (675B total / 41B active).
-- 🧠 [Mistral Small 3.2](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506) – High-performance 24B model (v3.2).
-- 🧠 [Mistral 7B v0.3](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3) – Latest instruction-tuned variant with function calling.
-- 🧠 [Mixtral 8x7B](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1) – Sparse MoE with 46.7B total / 12.9B active parameters.
-- 🧠 [Mixtral 8x22B](https://huggingface.co/mistral-community/Mixtral-8x22B-v0.1) – Large-scale MoE with 141B total / 39B active parameters.
+#### General Purpose & Reasoning
+- 🧠 [Mistral Large 3](https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512) – Flagship MoE (675B) with state-of-the-art reasoning and vision.
+- 🧠 [Mistral Small 3.2](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506) – High-performance dense 24B model (v3.2).
+- 🧠 [Magistral Small 3](https://huggingface.co/mistralai/Magistral-Small-2506) – Specialized 24B reasoning model for complex logical tasks.
+- 🧠 [Mixtral 8x22B](https://huggingface.co/mistral-community/Mixtral-8x22B-v0.1) – Legacy MoE workhorse (141B total / 39B active).
 
-### Reasoning Models
+#### Edge & On-Device (Ministral)
+- 🧠 [Ministral 8B](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410) – High-performance edge model (8B).
+- 🧠 [Ministral 3B](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512) – Ultralight model for mobile/browser (3B).
 
-- 🧠 [Magistral Small 24B](https://huggingface.co/mistralai/Magistral-Small-2506) – Open-weight reasoning model (24B) for complex logical tasks. 
-- 🧠 **Magistral Medium** – Specialized reasoning model available via API.
+#### Coding & Agentic (Devstral)
+- 🧠 [Devstral 2](https://huggingface.co/mistralai/Devstral-2-123B-2501) – 123B coding model (MIT License). 72.2% SWE-bench Verified.
+- 🧠 [Devstral Small 2](https://huggingface.co/mistralai/Devstral-Small-2-24B-2501) – 24B coding model (Apache 2.0) for local agents.
+- 🧠 [Codestral 25.01](https://huggingface.co/mistralai/Codestral-2501) – Legacy code specialist.
 
-### Edge & On-Device Models (Ministral)
-
-- 🧠 [Ministral 8B](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410) – High-performance edge model (8B parameters).
-- 🧠 [Ministral 3B](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512) – Ultralight model optimized for mobile and edge devices.
+#### Multimodal (Pixtral)
+- 🧠 [Pixtral Large](https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411) – 124B multimodal model building on Mistral Large 2.
+- 🧠 [Pixtral 12B](https://huggingface.co/mistralai/Pixtral-12B-2409) – Efficient vision-language model.
 
 ### Specialized Models
-
-- 🧠 **Pixtral Large** – Frontier-class multimodal model (124B) for image and text understanding.
-- 🧠 [Pixtral 12B](https://huggingface.co/mistralai/Pixtral-12B-2409) – Efficient multimodal model.
-- 🧠 **Codestral 25.01** – State-of-the-art coding model for software development.
-- 🧠 [Codestral Mamba](https://huggingface.co/mistralai/mamba-codestral-7B-v0.1) – Efficient linear-time sequence modeling for code.
-- 🧠 **Devstral** – Developer-focused model for coding assistance.
+- 🧠 **Mistral OCR 3** – Advanced document understanding and table reconstruction.
 - 🧠 **Voxtral** – Voice-native models for speech processing.
-- 🧠 **Mistral OCR** – High-performance document understanding and OCR.
-- 🧠 **Mathstral** – Mathematics-specialized for reasoning and problem-solving.
 
 ---
 
@@ -148,8 +146,8 @@ High-quality community fine-tunes built on Mistral base models:
 
 ### Official Libraries
 
-- 🧠 [mistral-common](https://github.com/mistralai/mistral-common) – Tokenization and pre-processing.
-- 🧠 [mistral-vibe](https://github.com/mistralai/mistral-vibe) ⭐ 2.5k+ – Minimal CLI coding agent.
+- 🧠 [mistral-common](https://github.com/mistralai/mistral-common) – Official tokenization and pre-processing library.
+- 🧠 [Mistral Vibe](https://github.com/mistralai/vibe) – Native CLI coding assistant powered by Devstral.
 
 ---
 
@@ -175,7 +173,8 @@ High-quality community fine-tunes built on Mistral base models:
 
 - 🌍 [LocalAI](https://github.com/mudler/LocalAI) ⭐ 25k+ – OpenAI-compatible local API server.
 - 🌍 [SkyPilot](https://github.com/skypilot-org/skypilot) – Run on any cloud with cost optimization.
-- 🧪 [MLC LLM](https://github.com/mlc-ai/mlc-llm) – Universal deployment across hardware backends.
+- 🌍 [MLC LLM](https://github.com/mlc-ai/mlc-llm) – Univseral deployment (iOS/Android) perfect for Ministral 3B.
+- 🧠 [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) – Optimized inference for Mistral Large 3 on NVIDIA GPUs.
 
 ---
 
@@ -348,6 +347,7 @@ High-quality community fine-tunes built on Mistral base models:
 
 - 🧠 [Mistral 7B](https://arxiv.org/abs/2310.06825) – Foundational 7B architecture paper.
 - 🧠 [Mixtral of Experts](https://arxiv.org/abs/2401.04088) – Sparse MoE architecture.
+- 🧠 [Mistral Large 3 Blog](https://mistral.ai/news/mistral-large-3) – Technical announcement and benchmarks.
 
 ### Related Research
 
