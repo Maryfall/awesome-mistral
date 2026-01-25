@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: Mistral AI Discord
-    url: https://discord.gg/mistralai
-    about: Join the official Mistral AI community for discussions
-  - name: Mistral AI Documentation
-    url: https://docs.mistral.ai
-    about: Check the official documentation for API and model information
